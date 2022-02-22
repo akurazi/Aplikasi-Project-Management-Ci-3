@@ -9,7 +9,7 @@
                             <h4 class="title" style="text-transform:capitalize; margin-top:5px; margin-left:5px;"></h4>
                         </div>
                         <div class="col-sm-1">
-                            <a href="<?= base_url('Project/listproject') ?>" class="btn btn-warning btn-fill pull-right" align="right">Kembali</a>
+                            <a href="<?= base_url('Project/listproject') ?>" class="btn btn-warning btn-fill ml-2" align="right">Kembali</a>
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card ">
                         <div class="card-header bg-primary">
                             <h3 class="card-title">Status</h3>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="card ">
                         <div class="card-header bg-primary">
                             <h3 class="card-title">Keterangan</h3>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card ">
                         <div class="card-header bg-primary">
                             <h3 class="card-title">Requirement</h3>
@@ -175,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-header bg-primary">
                             <h3 class="card-title">Pelaksana</h3>

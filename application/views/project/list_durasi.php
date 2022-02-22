@@ -8,7 +8,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
                             <h4>Project</h4>
@@ -26,11 +26,11 @@
                                         echo "<option value='" . $proj->id . "'>" . $proj->nama_project . "</option>";
                                     } ?>
                                 </select>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
                             <h4>Produk</h4>
@@ -55,7 +55,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    <table class="table table-bordered" style="width: 100%;">
+                    <table class="table table-bordered table-responsive" style="width: 100%;">
                         <thead style="width: 100%;">
                             <th>#</th>
                             <th>Nama Modul</th>

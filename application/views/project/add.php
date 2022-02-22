@@ -54,7 +54,7 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-sm-2 mt-2">
-                                            <?php echo anchor('Project', 'KEMBALI', array('class' => 'btn btn-info btn-sm')); ?>
+                                            <?php echo anchor('Project/listproject', 'KEMBALI', array('class' => 'btn btn-info btn-sm')); ?>
                                         </div>
                                         <div class="col-sm-1 mt-2">
                                             <button type="submit" name="submit" class="btn btn-danger  btn-sm">SIMPAN</button>

@@ -15,7 +15,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
                             <h4>Level User</h4>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="card">
                         <div class="card-header">
                             <h4>Hak Akses</h4>
@@ -44,7 +44,7 @@
                         <!-- /.card-header -->
                         <div class="card-body">
 
-                            <table class="table">
+                            <table class="table table-responsive">
                                 <thead class="thead-dark">
                                     <tr>
 

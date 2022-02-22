@@ -8,7 +8,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
                             <h4>Project</h4>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
                             <h4>Produk</h4>
@@ -54,28 +54,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <table class="table table-striped" id="kontrak"></table>
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="card">
                         <div class="card-header">
                             <div class="row">
-                                <div class="col-10">
+                                <div class="col-md-10">
                                     <h4 align="center">Dokumen </h4>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-md-2">
                                     <button class="btn btn-sm btn-success tambah-dokumen">Tambah Dokumen</button>
                                 </div>
                             </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered table-responsive">
                                 <thead>
                                     <th>#</th>
                                     <th>Nama Dokumen</th>

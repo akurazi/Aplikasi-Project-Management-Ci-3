@@ -3,11 +3,11 @@
     <section class="content-header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-10">
+                <div class="col-md-10">
                     <h2>Sub Menu Management</h2>
 
                 </div>
-                <div class="col-2">
+                <div class="col-md-2">
                     <button class="btn btn-md btn-success" data-toggle="modal" data-target="#ModalaAdd">Tambah Sub Menu</button>
 
                 </div>

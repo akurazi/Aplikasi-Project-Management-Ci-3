@@ -12,10 +12,10 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="row">
-                                <div class="col-10">
+                                <div class="col-md-10">
                                     <h4>Sub Modul</h4>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-md-2">
                                     <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#ModalAdd">Tambah Sub Modul</button>
                                 </div>
                             </div>

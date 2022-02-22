@@ -11,8 +11,8 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Nama Aplikasi</h4>
-                            <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#ModalaAdd">Tambah Aplikasi</button>
+                            <h4>Nama Produk</h4>
+                            <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#ModalaAdd">Tambah Produk</button>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">

@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <?php echo $this->session->flashdata('message'); ?>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
                             <h4>Project</h4>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="card">
                         <div class="card-header">
                             <h4>Pelaksana</h4>

@@ -124,7 +124,7 @@ class Project extends CI_Controller
 
     //halaman modul
     //halaman list Modul
-    public function listModul()
+    public function listmodul()
     {
         $this->db->where('status <', 3);
         $this->db->order_by('id', 'DESC');
@@ -133,6 +133,18 @@ class Project extends CI_Controller
         $this->load->view('template/header');
         $this->load->view('template/sidebar');
         $this->load->view('project/list_modul', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function coba()
+    {
+        $this->db->where('status <', 3);
+        $this->db->order_by('id', 'DESC');
+        $data['project'] = $this->db->get('project');
+        $data['modul'] = $this->db->get('modul');
+        $this->load->view('template/header');
+        $this->load->view('template/sidebar');
+        $this->load->view('coba', $data);
         $this->load->view('template/footer');
     }
 
@@ -782,11 +794,5 @@ class Project extends CI_Controller
         $id = $_GET['id'];
         $cek = $this->db->delete('durasi', 'id_durasi = ' . $id);
         echo json_encode($cek);
-    }
-
-    public function coba()
-    {
-
-        $this->load->view('coba');
     }
 }
