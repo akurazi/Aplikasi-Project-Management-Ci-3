@@ -9,6 +9,31 @@ class Model_project extends CI_Model
     }
 
     //dashboard
+
+    function akan()
+    {
+        $this->db->join('history_project', 'history_project.id_project = project.id');
+        $this->db->join('user', 'user.id =  history_project.id_user');
+        $this->db->group_by('id_project');
+        return $this->db->get_where('project', 'project.status = 1');
+    }
+
+    function sedang()
+    {
+        $this->db->join('history_project', 'history_project.id_project = project.id');
+        $this->db->join('user', 'user.id =  history_project.id_user');
+        $this->db->group_by('id_project');
+        return $this->db->get_where('project', array('project.status >' => 1, 'project.status < 6'));
+    }
+
+    function selesai()
+    {
+        $this->db->join('history_project', 'history_project.id_project = project.id');
+        $this->db->join('user', 'user.id =  history_project.id_user');
+        $this->db->group_by('id_project');
+        return $this->db->get_where('project', 'project.status = 6');
+    }
+
     function hitungProject()
     {
         $q = $this->db->get('project');
