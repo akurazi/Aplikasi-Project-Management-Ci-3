@@ -43,18 +43,19 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
 
-                            <table class="table table-responsive">
-                                <thead class="thead-dark">
-                                    <tr>
-
-                                        <th scope="col">Nama Menu</th>
-                                        <th scope="col">Link</th>
-                                        <th scope="col">Akses</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="isi"></tbody>
-                            </table>
+                                            <th scope="col">Nama Menu</th>
+                                            <th scope="col">Link</th>
+                                            <th scope="col">Akses</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="isi"></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,7 +68,6 @@
 <script>
     function loadData() {
         var id = $("#level").val();
-        console.log(id);
         $.ajax({
             type: 'GET',
             url: '<?php echo base_url() ?>Setting/get_rule',
@@ -85,7 +85,6 @@
             url: '<?php echo base_url() ?>Setting/addrule',
             data: 'level_user=' + level_user + '& id_menu=' + id_menu,
             success: function(html) {
-
                 alert('suksess memberikan akses');
             }
         })

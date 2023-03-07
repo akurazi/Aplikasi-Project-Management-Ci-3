@@ -11,10 +11,10 @@ class Pelaksana extends CI_Controller
     public function list($user)
     {
 
-        $data['level'] = $this->db->get('level_user');
+        $data['level'] = $this->db->get_where('level_user', 'id_level != 1');
         $this->db->join('level_user', 'level_user.id_level = user.status');
         $this->db->where('level_user.nama_level', $user);
-        $data['user'] = $this->db->get_where('user')    ;
+        $data['user'] = $this->db->get_where('user');
 
         $this->load->view('template/header');
         $this->load->view('template/sidebar');
@@ -37,7 +37,6 @@ class Pelaksana extends CI_Controller
         ];
 
         $data = $this->Model_project->savee($data1, $table);
-        echo json_encode($data);
     }
 
     public function update()

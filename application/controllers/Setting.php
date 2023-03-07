@@ -194,4 +194,23 @@ class Setting extends CI_Controller
             $this->db->delete('x_rule');
         }
     }
+
+    public function gantipassword()
+    {
+        $this->load->view('template/header');
+        $this->load->view('template/sidebar');
+        $this->load->view('setting/ganti_password');
+        $this->load->view('template/footer');
+    }
+
+    public function updatepassword()
+    {
+        $id = $this->session->userdata('id_user');
+        $password = md5($_POST['password']);
+        $data = array(
+            'password' => $password
+        );
+        $this->db->where('id', $id);
+        $this->db->update('user', $data);
+    }
 }

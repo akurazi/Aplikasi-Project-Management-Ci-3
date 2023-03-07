@@ -196,8 +196,9 @@
                                             <td>Nama Penanggung Jawab</td>
                                             <td>:</td>
                                             <td><?php
-                                                $this->db->join('pelaksana', 'pelaksana.id_pelaksana = x_pelaksana.id_pelaksana');
-                                                $this->db->where('pelaksana.jabatan = "penjab"');
+                                                $this->db->join('user', 'user.id = x_pelaksana.id_pelaksana');
+                                                $this->db->join('level_user', 'level_user.id_level = user.status');
+                                                $this->db->where('user.status=2');
                                                 $pen = $this->db->get_where('x_pelaksana', 'id_project =' . $cek->id)->result_array();
                                                 $no = 1;
                                                 foreach ($pen as $t) {
@@ -211,8 +212,9 @@
                                             <td>Nama PIC</td>
                                             <td>:</td>
                                             <td><?php
-                                                $this->db->join('pelaksana', 'pelaksana.id_pelaksana = x_pelaksana.id_pelaksana');
-                                                $this->db->where('pelaksana.jabatan = "pic"');
+                                                $this->db->join('user', 'user.id = x_pelaksana.id_pelaksana');
+                                                $this->db->join('level_user', 'level_user.id_level = user.status');
+                                                $this->db->where('user.status=3');
                                                 $pen = $this->db->get_where('x_pelaksana', 'id_project =' . $cek->id)->result_array();
                                                 $no = 1;
                                                 foreach ($pen as $t) {
@@ -227,8 +229,9 @@
                                             <td>:</td>
                                             <td>
                                                 <?php
-                                                $this->db->join('pelaksana', 'pelaksana.id_pelaksana = x_pelaksana.id_pelaksana');
-                                                $this->db->where('pelaksana.jabatan = "programmer"');
+                                                $this->db->join('user', 'user.id = x_pelaksana.id_pelaksana');
+                                                $this->db->join('level_user', 'level_user.id_level = user.status');
+                                                $this->db->where('user.status=4');
                                                 $pen = $this->db->get_where('x_pelaksana', 'id_project =' . $cek->id)->result_array();
                                                 $no = 1;
                                                 foreach ($pen as $t) {

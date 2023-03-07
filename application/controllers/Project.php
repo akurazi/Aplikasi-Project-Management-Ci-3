@@ -105,9 +105,8 @@ class Project extends CI_Controller
             redirect('Project/listproject');
         }
         $data['aplikasi'] = $this->db->get('base_aplikasi');
-        $this->db->join('x_kontrak', 'x_kontrak.id_project = project.id');
-        $this->db->join('aplikasi', 'aplikasi.id_project = project.id');
         $data['cek'] = $this->db->get_where('project', 'id = ' . $id)->row_array();
+
         $this->load->view('template/header');
         $this->load->view('template/sidebar');
         $this->load->view('project/edit', $data);

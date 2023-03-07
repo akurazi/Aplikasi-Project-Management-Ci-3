@@ -36,7 +36,6 @@
 
                             <h4>Produk</h4>
 
-
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -64,16 +63,18 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    <table class="table table-bordered table-responsive">
-                        <thead>
-                            <th>#</th>
-                            <th>Nama Modul</th>
-                            <th>Nama Programmer</th>
-                            <th>Action</th>
-                        </thead>
-                        <tbody id="tabel">
-                        <tbody>
-                    </table>
+                    <div class="table-responsoive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <th>#</th>
+                                <th>Nama Modul</th>
+                                <th>Nama Programmer</th>
+                                <th>Action</th>
+                            </thead>
+                            <tbody id="tabel">
+                            <tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
